@@ -1,0 +1,203 @@
+/* ========================= */
+/* GLOBAL BACKGROUND */
+/* ========================= */
+
+body{
+    margin:0;
+    font-family:'Inter','Segoe UI',sans-serif;
+
+    height:100vh;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background: radial-gradient(circle at top left,#3b4cc0,#141826);
+
+    color:white;
+}
+
+
+
+/* ========================= */
+/* AUTH CARD */
+/* ========================= */
+
+.auth-container{
+
+    width:380px;
+
+    padding:45px 40px;
+
+    border-radius:16px;
+
+    background:rgba(25,28,45,0.85);
+
+    backdrop-filter: blur(12px);
+
+    border:1px solid rgba(255,255,255,0.08);
+
+    box-shadow:
+        0 30px 70px rgba(0,0,0,0.6);
+
+}
+
+
+
+/* ========================= */
+/* HEADING */
+/* ========================= */
+
+.auth-container h2{
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+    font-weight:600;
+
+    letter-spacing:0.5px;
+
+}
+
+
+
+/* ========================= */
+/* INPUT FIELDS */
+/* ========================= */
+
+.auth-container input{
+
+    width:100%;
+
+    padding:14px;
+
+    margin-bottom:18px;
+
+    border-radius:10px;
+
+    border:1px solid rgba(255,255,255,0.08);
+
+    background:#111426;
+
+    color:white;
+
+    font-size:14px;
+
+    transition:all 0.25s ease;
+
+}
+
+
+.auth-container input::placeholder{
+    color:#9aa0c2;
+}
+
+
+.auth-container input:focus{
+
+    outline:none;
+
+    border:1px solid #7a8cff;
+
+    box-shadow:0 0 0 2px rgba(122,140,255,0.2);
+
+}
+
+
+
+/* ========================= */
+/* BUTTON */
+/* ========================= */
+
+.auth-container button{
+
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:10px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    color:white;
+
+    background:linear-gradient(90deg,#5f72ff,#9b5cff);
+
+    cursor:pointer;
+
+    transition:all 0.25s ease;
+
+}
+
+
+.auth-container button:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 12px 25px rgba(95,114,255,0.4);
+
+}
+
+
+
+/* ========================= */
+/* SECONDARY LINK */
+/* ========================= */
+
+.auth-container p{
+
+    margin-top:18px;
+
+    text-align:center;
+
+    font-size:13px;
+
+    color:#9aa0ff;
+
+    cursor:pointer;
+
+}
+
+
+.auth-container p:hover{
+    text-decoration:underline;
+}
+
+
+
+/* ========================= */
+/* WELCOME PAGE */
+/* ========================= */
+
+.welcome-container{
+
+    padding:70px;
+
+    text-align:center;
+
+    border-radius:16px;
+
+    background:rgba(25,28,45,0.9);
+
+    box-shadow:0 30px 70px rgba(0,0,0,0.6);
+
+}
+
+.welcome-container h1{
+
+    font-weight:600;
+
+    margin-bottom:10px;
+
+}
+
+.welcome-container p{
+
+    color:#a2a7c9;
+
+}

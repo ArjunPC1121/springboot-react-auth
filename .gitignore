@@ -1,0 +1,33 @@
+# ==============================
+# Spring Boot / Java
+# ==============================
+
+target/
+*.class
+*.jar
+*.log
+
+# Ignore real credentials
+auth-backend/src/main/resources/application.properties
+
+# ==============================
+# React / Node
+# ==============================
+
+auth-frontend/node_modules
+auth-frontend/build
+
+# ==============================
+# IDE files
+# ==============================
+
+.idea/
+.vscode/
+*.iml
+
+# ==============================
+# OS files
+# ==============================
+
+.DS_Store
+Thumbs.db
