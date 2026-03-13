@@ -1,0 +1,179 @@
+/* ============================= */
+/* DASHBOARD PAGE */
+/* ============================= */
+
+.dashboard{
+
+    height:100vh;
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:30px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+    color:white;
+
+}
+
+
+/* ============================= */
+/* DASHBOARD TITLE */
+/* ============================= */
+
+.dashboard h1{
+
+    font-size:30px;
+
+    font-weight:600;
+
+    margin-bottom:20px;
+
+}
+
+
+/* ============================= */
+/* STATS GRID */
+/* ============================= */
+
+.stats{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+
+}
+
+
+/* ============================= */
+/* STAT CARD */
+/* ============================= */
+
+.card{
+
+    background:#1a1f36;
+
+    padding:20px;
+
+    border-radius:12px;
+
+    border:1px solid rgba(255,255,255,0.05);
+
+    transition:all 0.25s ease;
+
+}
+
+.card:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.5);
+
+}
+
+.card h3{
+
+    font-size:14px;
+
+    color:#9aa0d8;
+
+}
+
+.card p{
+
+    font-size:22px;
+
+    font-weight:600;
+
+    margin-top:8px;
+
+}
+
+
+/* ============================= */
+/* PORTFOLIO SECTION */
+/* ============================= */
+
+.portfolio-section{
+
+    margin-top:15px;
+
+}
+
+.portfolio-section h2{
+
+    font-size:22px;
+
+    margin-bottom:10px;
+
+}
+
+
+/* ============================= */
+/* ASSET ALLOCATION */
+/* ============================= */
+
+.allocation{
+
+    display:flex;
+
+    gap:30px;
+
+    font-size:15px;
+
+    color:#b0b6e6;
+
+}
+
+
+/* ============================= */
+/* ACTION BUTTONS */
+/* ============================= */
+
+.actions{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-top:15px;
+
+}
+
+.actions button{
+
+    flex:1;
+
+    padding:12px;
+
+    border:none;
+
+    border-radius:10px;
+
+    font-weight:500;
+
+    background:linear-gradient(90deg,#6a8cff,#b27cff);
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:all 0.25s ease;
+
+}
+
+.actions button:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 10px 20px rgba(106,140,255,0.4);
+
+}

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
-import "../styles/auth.css";
 import { useNavigate } from "react-router-dom";
+import "../styles/auth.css";
 
 function Login() {
 
@@ -10,7 +10,9 @@ function Login() {
   const [email,setEmail] = useState("");
   const [password,setPassword] = useState("");
 
-  const handleLogin = async () => {
+  const handleLogin = async (e) => {
+
+    e.preventDefault();   // prevents page refresh
 
     try{
 
@@ -19,7 +21,7 @@ function Login() {
         {email,password}
       );
 
-      navigate("/welcome",{state:{name:res.data.name}});
+      navigate("/home",{state:{name:res.data.name}});
 
     }catch(err){
       alert("Invalid credentials");
@@ -29,26 +31,36 @@ function Login() {
 
   return(
 
-    <div className="auth-container">
+    <div className="auth-wrapper">
 
-      <h2>Welcome Back</h2>
+      <div className="auth-container">
 
-      <input
-        placeholder="Email"
-        onChange={(e)=>setEmail(e.target.value)}
-      />
+        <h1 className="brand-title">WealthWise</h1>
 
-      <input
-        type="password"
-        placeholder="Password"
-        onChange={(e)=>setPassword(e.target.value)}
-      />
+        <h2>Sign in to your investment dashboard</h2>
 
-      <button onClick={handleLogin}>Login</button>
+        <form onSubmit={handleLogin}>
 
-      <p onClick={()=>navigate("/signup")}>
-        Create Account
-      </p>
+          <input
+            placeholder="Email"
+            onChange={(e)=>setEmail(e.target.value)}
+          />
+
+          <input
+            type="password"
+            placeholder="Password"
+            onChange={(e)=>setPassword(e.target.value)}
+          />
+
+          <button type="submit">Login</button>
+
+        </form>
+
+        <p onClick={()=>navigate("/forgot-password")}>
+          Forgot Password?
+        </p>
+
+      </div>
 
     </div>
 

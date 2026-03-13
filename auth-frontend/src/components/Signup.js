@@ -32,7 +32,13 @@ function Signup(){
 
     <div className="auth-container">
 
-      <h2>Create Account</h2>
+      <h1 className="brand-title">WealthWise</h1>
+
+      <h2>Create your investment account</h2>
+
+      <p className="subtitle">
+      Start tracking your mutual funds and SIP investments with intelligent portfolio analytics.
+      </p>
 
       <input
         placeholder="Name"
