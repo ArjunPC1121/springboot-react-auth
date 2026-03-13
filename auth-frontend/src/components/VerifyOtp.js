@@ -24,26 +24,27 @@ function VerifyOtp(){
   };
 
   return(
+    <div className="auth-wrapper">
+        <div className="auth-container">
 
-    <div className="auth-container">
+        <h1 className="brand-title">Verify Security Code</h1>
 
-      <h1 className="brand-title">Verify Security Code</h1>
+            <h2>Enter the OTP sent to your registered email</h2>
 
-        <h2>Enter the OTP sent to your registered email</h2>
+            <p className="subtitle">
+            This helps us confirm that it's really you accessing your investment account.
+            </p>
 
-        <p className="subtitle">
-        This helps us confirm that it's really you accessing your investment account.
-        </p>
+        <input
+            placeholder="Enter OTP"
+            onChange={(e)=>setOtp(e.target.value)}
+        />
 
-      <input
-        placeholder="Enter OTP"
-        onChange={(e)=>setOtp(e.target.value)}
-      />
+        <button onClick={handleVerify}>
+            Verify OTP
+        </button>
 
-      <button onClick={handleVerify}>
-        Verify OTP
-      </button>
-
+        </div>
     </div>
 
   );

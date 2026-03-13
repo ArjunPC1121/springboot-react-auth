@@ -26,25 +26,26 @@ function ResetPassword(){
   };
 
   return(
+    <div className="auth-wrapper">
+        <div className="auth-container">
 
-    <div className="auth-container">
+        <h1 className="brand-title">Reset Your Password</h1>
 
-      <h1 className="brand-title">Reset Your Password</h1>
+            <p className="subtitle">
+            Create a new password to secure your WealthWise portfolio access.
+            </p>
 
-        <p className="subtitle">
-        Create a new password to secure your WealthWise portfolio access.
-        </p>
+        <input
+            type="password"
+            placeholder="New Password"
+            onChange={(e)=>setPassword(e.target.value)}
+        />
 
-      <input
-        type="password"
-        placeholder="New Password"
-        onChange={(e)=>setPassword(e.target.value)}
-      />
+        <button onClick={handleReset}>
+            Reset Password
+        </button>
 
-      <button onClick={handleReset}>
-        Reset Password
-      </button>
-
+        </div>
     </div>
 
   );

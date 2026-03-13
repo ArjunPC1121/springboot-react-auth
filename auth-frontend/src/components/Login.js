@@ -60,6 +60,13 @@ function Login() {
           Forgot Password?
         </p>
 
+        <p className="signup-link">
+          Don't have an account?{" "}
+          <span onClick={()=>navigate("/signup")}>
+            Sign Up
+          </span>
+        </p>
+
       </div>
 
     </div>

@@ -386,3 +386,27 @@ body{
     box-shadow:0 10px 25px rgba(106,140,255,0.4);
 
 }
+
+.signup-link{
+
+  margin-top:15px;
+
+  font-size:13px;
+
+  color:#9fa6ff;
+
+}
+
+.signup-link span{
+
+  cursor:pointer;
+
+  font-weight:500;
+
+}
+
+.signup-link span:hover{
+
+  text-decoration:underline;
+
+}

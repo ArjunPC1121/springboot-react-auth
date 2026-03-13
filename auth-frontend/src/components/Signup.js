@@ -30,6 +30,8 @@ function Signup(){
 
   return(
 
+  <div className="auth-wrapper">
+
     <div className="auth-container">
 
       <h1 className="brand-title">WealthWise</h1>
@@ -37,30 +39,40 @@ function Signup(){
       <h2>Create your investment account</h2>
 
       <p className="subtitle">
-      Start tracking your mutual funds and SIP investments with intelligent portfolio analytics.
+        Start tracking your mutual funds and SIP investments with intelligent portfolio analytics.
       </p>
 
-      <input
-        placeholder="Name"
-        onChange={(e)=>setName(e.target.value)}
-      />
+      <form onSubmit={handleSignup}>
 
-      <input
-        placeholder="Email"
-        onChange={(e)=>setEmail(e.target.value)}
-      />
+        <input
+          placeholder="Name"
+          onChange={(e)=>setName(e.target.value)}
+        />
 
-      <input
-        type="password"
-        placeholder="Password"
-        onChange={(e)=>setPassword(e.target.value)}
-      />
+        <input
+          placeholder="Email"
+          onChange={(e)=>setEmail(e.target.value)}
+        />
 
-      <button onClick={handleSignup}>Signup</button>
+        <input
+          type="password"
+          placeholder="Password"
+          onChange={(e)=>setPassword(e.target.value)}
+        />
+
+        <button type="submit" onClick={()=>navigate("/")}>Signup</button>
+
+      </form>
+
+      <p onClick={()=>navigate("/")}>
+        Already have an account? Login
+      </p>
 
     </div>
 
-  );
+  </div>
+
+);
 
 }
 
